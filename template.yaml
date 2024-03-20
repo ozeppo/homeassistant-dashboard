@@ -5,12 +5,16 @@ button_card_templates:
       var_icon: mdi:lightbulb
       var_label: label
       var_entity: sensor.entity
-    name: [[[ return variables.var_name ]]]
-    icon: [[[ return variables.var_icon ]]]
-    label: [[[ return variables.var_label ]]]
+    name: |
+      [[[ return variables.var_name ]]]
+    icon: |
+      [[[ return variables.var_icon ]]]
+    label: |
+      [[[ return variables.var_label ]]]
     show_label: true
     show_state: false
-    entity: [[[ return variables.var_entity ]]]
+    entity: |
+      [[[ return variables.var_entity ]]]
     tap_action:
       action: toggle
     hold_action:
@@ -20,8 +24,8 @@ button_card_templates:
         styles:
           card:
             - background: >-
-                linear-gradient(50deg, rgba(241,201,59,1) 0%, rgba(250,227,146,1)
-                100%)
+                linear-gradient(50deg, rgba(241,201,59,1) 0%,
+                rgba(250,227,146,1) 100%)
       - value: 'off'
         styles:
           card:
@@ -52,16 +56,20 @@ button_card_templates:
       var_name: Room Name
       var_icon: mdi:sofa
       var_entity: sensor.entity
-      var_navigationPath: #
+      var_navigationPath: null
       var_color: '#EE4266'
-    name: [[[ return variables.var_name ]]]
-    icon: [[[ return variables.var_icon ]]]
-    entity: [[[ return variables.var_entity ]]]
+    name: |
+      [[[ return variables.var_name ]]]
+    icon: |
+      [[[ return variables.var_icon ]]]
+    entity: |
+      [[[ return variables.var_entity ]]]
     show_state: true
     show_label: false
     tap_action:
       action: navigate
-      navigation_path: [[[ return variables.var_navigationPath ]]]
+      navigation_path: |
+        [[[ return variables.var_navigationPath ]]]
     custom_fields:
       arrow: |
         [[[
@@ -79,7 +87,8 @@ button_card_templates:
         - width: 24px
         - color: black
       img_cell:
-        - background: [[[ return variables.var_color ]]]
+        - background: |
+            [[[ return variables.var_color ]]]
         - border-radius: 200px
         - width: 50px
         - height: 50px
@@ -98,10 +107,13 @@ button_card_templates:
       var_entity: sensor.entity
       var_name: Simple Switch
       var_icon: mdi:power-socket-eu
-    entity: [[[ return variables.var_entity ]]]
-    name: [[[ return variables.var_name ]]]
+    entity: |
+      [[[ return variables.var_entity ]]]
+    name: |
+      [[[ return variables.var_name ]]]
     show_icon: true
-    icon: [[[ return variables.var_icon ]]]
+    icon:
+      - - - return variables.var_icon
     tap_action:
       action: toggle
     state:
