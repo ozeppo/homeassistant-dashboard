@@ -1,0 +1,43 @@
+type: custom:button-card
+name: Celling
+icon: mdi:lightbulb
+label: Office
+show_label: true
+show_state: false
+entity: light.light_office
+tap_action:
+  action: toggle
+hold_action:
+  action: more-info
+state:
+  - value: 'on'
+    styles:
+      card:
+        - background: >-
+            linear-gradient(50deg, rgba(241,201,59,1) 0%, rgba(250,227,146,1)
+            100%)
+  - value: 'off'
+    styles:
+      card:
+        - background: null
+styles:
+  icon:
+    - width: 24px
+    - color: black
+  img_cell:
+    - justify-self: end
+    - width: 30px
+    - height: 30px
+  name:
+    - justify-self: start
+    - font-size: 18px
+    - line-height: 40px
+    - font-weight: 600
+    - color: black
+  label:
+    - justify-self: start
+    - font-size: 14px
+    - font-weight: 500
+    - color: black
+  card:
+    - padding: 18px

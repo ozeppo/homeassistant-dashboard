@@ -1,2 +1,6 @@
 # homeassistant-dashboard
- A pack of some Home Assistant YAML's
+This is a template for home assistant dashboards
+
+## Requiments
+1. button-card
+2. my-slider-v2

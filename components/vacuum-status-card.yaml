@@ -1,0 +1,49 @@
+type: custom:button-card
+name: Status
+entity: vacuum.xiaomi_robot_vacuum_s10
+show_name: true
+show_state: true
+show_icon: false
+tap_action:
+  action: none
+custom_fields:
+  water_left: |
+    [[[
+      return  entity.attributes.detergent_left + '%' + '<ha-icon icon="mdi:water-percent" style="width:20px"></ha-icon>';
+    ]]]
+  dirt_left: |
+    [[[
+      return  entity.attributes.sensor_dirty_left + '%' + '<ha-icon icon="mdi:delete-empty" style="width:20px"></ha-icon>';
+    ]]]
+  battery_left: |
+    [[[
+      return  entity.attributes.battery_level + '%' + '<ha-icon icon="mdi:battery-90" style="width:18px"></ha-icon>';
+    ]]]
+styles:
+  grid:
+    - grid-template-areas: '"n battery_left" "s dirt_left" "s water_left"'
+    - grid-template-columns: 1.4fr 0.6fr;
+  name:
+    - justify-self: start
+    - font-size: 14px
+    - font-weight: 300
+    - margin-left: 20px
+  state:
+    - justify-self: start
+    - font-size: 18px
+    - font-weight: 400
+    - margin-top: 10px
+    - margin-left: 20px
+  custom_fields:
+    water_left:
+      - justify-self: end
+      - font-size: 12px
+      - margin-right: 20px
+    dirt_left:
+      - justify-self: end
+      - font-size: 12px
+      - margin-right: 20px
+    battery_left:
+      - justify-self: end
+      - font-size: 12px
+      - margin-right: 20px

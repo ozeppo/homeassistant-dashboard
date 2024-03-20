@@ -1,0 +1,66 @@
+type: custom:button-card
+entity: light.light_office
+name: Sample switch
+show_icon: true
+icon: mdi:power-socket-eu
+tap_action:
+  action: toggle
+state:
+  - value: 'off'
+    styles:
+      card:
+        - background: black
+      icon:
+        - color: white
+      name:
+        - color: white
+      custom_fields:
+        state:
+          - color: white
+styles:
+  card:
+    - padding: 20px
+    - background: '#F6F5F5'
+  grid:
+    - grid-template-areas: '"i i" "n n" "state icon"'
+    - grid-template-columns: 1fr 1fr
+    - grid-template-rows: 1fr min-content min-content
+  name:
+    - justify-self: start
+    - font-size: 14px
+    - color: black
+    - opacity: '0.7'
+    - padding: 2px 0px
+  icon:
+    - width: 24px
+    - color: black
+  img_cell:
+    - justify-self: start
+    - width: 24px
+    - height: 24px
+    - padding-bottom: 18px
+  custom_fields:
+    icon:
+      - justify-self: end
+    state:
+      - justify-self: start
+      - font-size: 16px
+      - font-weight: 500
+      - color: black
+custom_fields:
+  icon: |
+    [[[
+      var state = entity.state; 
+      if(state == "on")
+       return '<ha-icon icon="mdi:toggle-switch" style="color: white; width: 50px; height: 50px; color: #A5DD9B;">'
+      else
+        return '<ha-icon icon="mdi:toggle-switch-off" style="color: white; width: 50px; height: 50px;">'
+    ]]]
+  state: |
+    [[[
+      var state = entity.state; 
+      if(state == "on")
+        return 'On'
+      else
+        return 'Off'
+    ]]]
