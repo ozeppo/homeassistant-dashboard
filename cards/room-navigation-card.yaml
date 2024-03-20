@@ -1,0 +1,8 @@
+type: custom:button-card
+template: room-navigation-card
+variables:
+  var_name: Living Room
+  var_entity: sensor.temperature
+  var_icon: mdi:sofa
+  var_navigationPath: /lovelace/living-room
+  var_color: '#EE4266'

@@ -1,0 +1,6 @@
+type: custom:button-card
+template: simple-switch-card
+variables:
+  var_name: Office Socket
+  var_entity: sensor.entity
+  var_icon: mdi:power-socket-eu
