@@ -12,9 +12,10 @@ Just add a whole code from *template.yaml* to a top of a dashboard raw code.
 
 ### Light Card
 A simple card for controlling lights.
+
 ![A light card image](https://i.imgur.com/9Spio42.png)
 
-```
+```yaml
 type: custom:button-card
 template: light_button
 variables:
