@@ -1,0 +1,24 @@
+type: custom:my-slider-v2
+entity: light.light_office
+colorMode: temperature
+styles:
+  container:
+    - border-radius: 100px
+    - overflow: visible
+  card:
+    - height: 45px
+    - padding: 0 25px
+    - border-radius: 100px
+    - background: linear-gradient(90deg, rgba(173,227,255,1) 0%, rgba(255,215,65,1) 100%)
+  track:
+    - overflow: visible
+    - background: none
+  progress:
+    - background: none
+  thumb:
+    - background: white
+    - top: 4px
+    - right: '-18px'
+    - height: 36px
+    - width: 36px
+    - border-radius: 100px
