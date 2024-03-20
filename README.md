@@ -28,9 +28,9 @@ variables:
 ```
 
 A option you can set:
-```var_name``` - Main header on card
-```var_label``` - Second text on card
-```var_entity``` - Switch-type entity
+```var_name``` - Main header on card,
+```var_label``` - Second text on card,
+```var_entity``` - Switch-type entity,
 ```var_icon``` - Icon for a card
 
 ### Simple Switch Card
@@ -45,8 +45,8 @@ variables:
 ```
 
 A option you can set:
-```var_name``` - Main header on card
-```var_entity``` - Entity with a switch option
+```var_name``` - Main header on card,
+```var_entity``` - Entity with a switch option,
 ```var_icon``` - Icon for card
 
 ### Room Navigation Card
@@ -64,10 +64,10 @@ variables:
 ```
 
 A option you can set:
-```var_name``` - Main header on card
-```var_entity``` - Temperature sensor for card
-```var_icon``` - Icon for room
-```var_navigationPath``` - Where to navigate when clicking the card
+```var_name``` - Main header on card,
+```var_entity``` - Temperature sensor for card,
+```var_icon``` - Icon for room,
+```var_navigationPath``` - Where to navigate when clicking the card,
 ```var_color``` - Color for icon background
 
 ### Vacuum Status Card
