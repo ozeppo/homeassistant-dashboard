@@ -1,5 +1,5 @@
 type: custom:button-card
-template: light_button
+template: light-card
 variables:
   var_name: Celling
   var_label: Living Room
