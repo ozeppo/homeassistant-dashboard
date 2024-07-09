@@ -1,4 +1,4 @@
-# smartyhome-template
+# smartyhome-dashboard
 This is a template for home assistant dashboards
 
 ## Requirements
